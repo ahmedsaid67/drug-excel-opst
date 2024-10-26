@@ -19,7 +19,7 @@ const UploadExcel = () => {
         formData.append('file', file);
 
         try {
-            const response = await axios.post('http://127.0.0.1:8000/api/appname/form/bulk_create_from_excel/', formData, {
+            const response = await axios.post('https://api.ölçek.com/api/appname/form/bulk_create_from_excel/', formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                 },
@@ -33,7 +33,7 @@ const UploadExcel = () => {
 
     return (
         <div className={styles.container}>
-            <h1 className={styles.title}>İlaç Kategori Üret</h1>
+            <h1 className={styles.title}>Form Üret</h1>
             <p className={styles.subtitle}>Excel dosyasını yükleyerek ilaç kategorilerini topluca oluşturun.</p>
             <form onSubmit={handleSubmit} className={styles.form}>
                 <input 

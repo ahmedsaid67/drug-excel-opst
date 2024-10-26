@@ -19,11 +19,12 @@ const UploadExcel = () => {
         formData.append('file', file);
 
         try {
-            const response = await axios.post('http://127.0.0.1:8000/api/appname/yasdoz/bulk_create_from_excel/', formData, {
+            const response = await axios.post('https://api.ölçek.com/api/appname/yasdoz/bulk_create_from_excel/', formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                 },
             });
+            console.log(response.data);
             alert('File uploaded successfully');
         } catch (error) {
             alert('Error uploading file');

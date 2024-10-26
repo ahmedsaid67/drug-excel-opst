@@ -1,0 +1,71 @@
+.mainContainer {
+    display: flex;
+    height: 93vh; /* Yüksekliği uygun bir şekilde ayarlayın */
+  }
+  
+  .leftContainer {
+    background-color: antiquewhite;
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .rightContainer {
+    background-color: rgb(209, 187, 159);
+    width: 100%; /* Sol alan ile eşit genişlikte olması için 50% yapıldı */
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* Butonların birden fazla satıra geçmesini sağlar */
+    align-items: center;
+    justify-content: center;
+    gap: 2rem; /* Butonlar arasında boşluk bırak */
+    padding: 2rem; /* İç boşluk ekleyin */
+  }
+  
+  .button {
+    width: 200px; /* Buton genişliğini ayarlayın */
+    height: 60px; /* Buton yüksekliğini ayarlayın */
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #005bb5;
+  }
+  
+  
+  .navbar {
+    position: static;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0070f3;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  .navLink {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .navLink:hover {
+    background-color: #005bb5;
+  }
