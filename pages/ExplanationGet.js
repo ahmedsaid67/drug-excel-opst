@@ -12,7 +12,7 @@ const DozBilgisiGetir = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.get('http://127.0.0.1:8000/api/appname/explanationdoz/get-dosage-by-explanation', {
+      const response = await axios.get('https://api.ölçek.com/api/appname/explanationdoz/get-dosage-by-explanation', {
         params: {
           ilac_id: ilacId,
 

@@ -40,7 +40,7 @@ export default function Home() {
         <Link href="/HastalikAzalanKiloCreate" passHref>
           <button className={styles.button}>Hastalık Azalan Kilo Create</button>
         </Link>
-        <Link href="/HastalikArtanKiloCreate" passHref>
+        <Link href="/hastalikArtanKiloDozCreate" passHref>
           <button className={styles.button}>Hastalık Artan Kilo Create</button>
         </Link>
         <Link href="/supplementCreate" passHref>
